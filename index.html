@@ -8,64 +8,69 @@
 </head>
 <div class="bg-info">
     <body>
+    <img src="..." class="img-fluid" alt="Responsive image">
         <h1 class="font-weight-bold text-center">Coffee!</h1>
         <hr>
 
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <form>
                         <p>
-                            <h5>Coffee Name</h5>
-                            <input type="text" id="searchBox" onkeyup="myFunction()" placeholder="">
-                        <br>
-                        <br>
-                        <h5>Roast</h5>
-                        <label for="roast-selection"></label>
-                        <select id="roast-selection">
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <br>
-                        <br>
-                        <input id="submit" type="submit" class="btn btn-primary btn-lg btn-block"/>
-                        <br>
-                        <br>
-
-                        <h5 class="font-weight-bold text-center">Add a Coffee</h5>
-                        <br>
-                        <br>
-                        <h5>Roast</h5>
-                        <label for="roast-selection"></label>
-                        <select id="roast-selection">
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <br>
-                        <br>
                         <h5>Coffee Name</h5>
                         <input type="text" id="searchBox" onkeyup="myFunction()" placeholder="">
                         <br>
                         <br>
-
+                        <h5>Roast</h5>
+                        <label for="roast-selection"></label>
+                        <select id="roast-selection">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <br>
+                        <br>
                         <input id="submit" type="submit" class="btn btn-primary btn-lg btn-block"/>
-                        </p>
+                        <br>
+                        <br>
+
+                        <!--<h5 class="font-weight-bold text-center">Add a Coffee</h5>-->
+                        <!--<br>-->
+                        <!--<br>-->
+
+                        <!--<h5>Roast</h5>-->
+                        <!--<label for="roast-selection"></label>-->
+                        <!--<select id="roast-selection">-->
+                            <!--<option>light</option>-->
+                            <!--<option>medium</option>-->
+                            <!--<option>dark</option>-->
+                        <!--</select>-->
+                        <!--<br>-->
+                        <!--<br>-->
+
+                        <!--<h5>Coffee Name</h5>-->
+                        <!--<input type="text" id="searchBox" onkeyup="myFunctionAgain()" placeholder="">-->
+                        <!--<br>-->
+                        <!--<br>-->
+
+                        <!--<input id="submit" type="submit" class="btn btn-primary btn-lg btn-block"/>-->
+                        <!--</p>-->
                     </form>
                 </div>
 
 
         <!--<div class="container">-->
             <!--<div class="row">-->
-                <div class="col">
+                <!--<div class="col-8">-->
+
                 <!--</div>-->
             <!--</div>-->
         <!--</div>-->
-                    <table>
+                    <table id="myTable">
                         <thead>
-                            <tr>
-
+                            <tr class="header">
+                                <!--<th style="width:60%;">Name</th>-->
+                                <!--<th style="width:40%;">Roast</th>-->
                             </tr>
                         </thead>
                         <tbody id="coffees"></tbody>

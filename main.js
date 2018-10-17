@@ -3,8 +3,8 @@
 function renderCoffee(coffee) {
     var html = '<div class="coffee"';
     html +=  coffee.id + '>';
-    html += '<div>' + coffee.name + '</div>';
-    html += '<div>' + coffee.roast + '</div>';
+    html += '<h3>' + coffee.name + '</h3>';
+    html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -47,6 +47,27 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+
+function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+
 
 
 var tbody = document.querySelector('#coffees');
