@@ -15,6 +15,18 @@ td, th {
 #searchBox {
     width: 100%;
 }
+
+
 body {
-    background-color: rgb(0	164	188	);
+    /*background-color: rgb(0	164	188	);*/
+    background-image: url("img/climpek.png");
+}
+
+
+/*.container {*/
+    /*background-image: url("img/climpek.png");*/
+/*}*/
+
+h3 {
+    font-family: "Microsoft Sans Serif";
 }
