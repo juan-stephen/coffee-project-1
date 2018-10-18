@@ -34,37 +34,38 @@
             <br>
 
     <section class="row">
-        <article class="col-12">
-            <div class="col-4">
+        <article class="col-6">
+            <div class="col-8">
                 <form>
-                    <h3 class="text-center">Search For Coffee</h3>
-                    <div class="ml-5">
+                    <h3 class="text-left">Search For Coffee</h3>
+                    <div class="col-6">
                         <label id="coffee-name-search">Coffee Name
                             <input type="text">
                         </label>
                     </div>
-                    <div class="ml-5">
+                    <div class="col-6">
                         <label for="roast-selection">Roast</label>
                         <select id="roast-selection">
-                            <option>all</option>
+
                             <option>light</option>
                             <option>medium</option>
                             <option>dark</option>
                         </select>
                     </div>
                     <div class="text-center">
-                            <input id="submit" type="submit" class="btn btn-secondary btn-lg btn-block"/>
+                            <input id="submit" type="submit"/>
                     </div>
                 </form>
             </div>
         </article>
-    </section>
-
-
-    <div id="coffees" class="row text-green m-2">
+        <div class="col-6 float-right">
+    <div id="coffees" class="text-muted text-left">
         <h1 class="coffee_title"></h1>
         <p id="type_of_roast"></p>
     </div>
+    </section>
+
+
 
 
     <section>
@@ -81,6 +82,7 @@
             <input id="addition" type="submit" />
         </form>
     </section>
+    </div>
 </div>
 
 <script src="main.js"></script>
