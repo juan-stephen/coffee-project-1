@@ -15,7 +15,10 @@ td, th {
 #searchBox {
     width: 50%;
 }
-
+#namePlacement {
+    width: 100%;
+    /*padding: 0;*/
+}
 
 body {
 
